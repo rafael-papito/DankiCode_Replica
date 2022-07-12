@@ -1,0 +1,525 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.container{
+	max-width: 1400px;
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.not{
+    width: 70%;
+    height: 50px;
+    float: right;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background: #4c3282;
+}
+nav .not ul{
+	font-size: 16px;
+	margin-top: 23px;
+	float: left;
+	font-weight: normal;
+	list-style-type: none;
+}
+nav .not li{
+	padding: 0 20px;
+	display: inline-block;
+}
+nav .not li a{
+	color: #fff;
+	text-decoration: none;
+}
+.btn{
+    float: right;
+    margin: 0 10px;
+}
+.btn a{
+    margin: 20px 0 0 8px ;
+    float: left;
+    text-decoration: none;
+    padding: 5px 19px;
+}
+.btn1{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: -.3px;
+    text-transform: uppercase;
+    font-size: 11px;
+    border-radius: 30px;
+    color: #5e3ea1;
+    font-weight: 700;
+    background: #fff;
+    border: 1px solid #fff;
+}
+.btn2{
+    display: inline-block;
+    letter-spacing: -.3px;
+    text-transform: uppercase;
+    font-size: 11px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 700;
+    background: 0 0;
+    border: 1px solid #fff;
+}
+.section_mobile{
+    width: 100%;
+    height: 100px;
+    background: #5e3ea1;
+    display: none;
+}
+nav.mobile{
+	cursor: pointer;
+	display: none;
+	float: right;
+	margin-right: 25px;
+	margin-top: 40px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../midia/menu.svg');
+	background-size: 100% 100%;
+}
+nav.mobile ul{
+    font-size: 20px;
+	display: none;
+	background-color:white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 180px;
+	list-style-type: none;
+	text-align: center;
+    background: #ccc;
+    z-index: 1;
+}
+nav.mobile ul li{
+	padding:8px 0;
+	transition: 0.4s;
+	margin-bottom: 20px;
+}
+nav.mobile ul li:hover{
+	background-color: rgb(230,230,230);
+}
+nav.mobile ul li a{
+	color: #5e3ea1;
+	text-decoration: none;
+}
+section.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('../midia/header_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.box_texto{
+    text-align: center;
+    width: 450px;
+    height: 400px;
+    margin-top: 55px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.titulo_principal{
+    color: #fff;
+    margin: 20px 0;
+    font-size: 110px;
+}
+.titulo{
+    color: #fff;
+    font-size:23px ;
+    font-weight: 400;
+    margin: 25px 0;
+}
+.botao{
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: 700;
+    background: 0 0;
+    margin-top: 25px;
+}
+.box_texto a{
+    margin-bottom: 30px;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #e7426b;
+    font-size: 18px;
+    letter-spacing: -.3px;
+    border: 1px solid #e7426b;
+    display: inline-block;
+}
+section.diferenciais{
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+}
+.diferenciais .container{
+    max-width: 1000px;
+   
+}
+.center{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.box_dif{
+    float: left;
+    width: 25%;
+    padding: 50px 3%;
+    text-align: center;
+}
+.circle_img{
+    display: inline-block;
+    background-color: #dcd4e5;
+    width: 80%;
+    position: relative;
+    padding-top: 80%;
+    border-radius: 50%;
+    background-image: url('../midia/icon.png');
+    background-size: 64px 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box_dif p{
+    font-size: 23px;
+    color: #5e3ea1;
+    letter-spacing: -.3px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+section.chamada1{
+    width: 100%;
+    height: 150px;
+    background-color: #5e3ea1;
+    margin-top: 90px;
+    display: inline-block;
+}
+.organiza1{
+    text-align: center;
+    margin: 60px auto;
+    color: #fff;
+}
+.organiza1 h2{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+}
+.organiza1 p{
+    letter-spacing: -.3px;
+    margin-top: 9px;
+    font-weight: 300;
+    font-size: 23px;
+}
+section.vitrine-cursos{
+    width: 100%;
+
+}
+.center2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.box-curso-single{
+    flex-wrap: wrap;
+    display: flex;
+    width: 33.3%;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+}
+.box-curso-wraper{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+.box-curso-wraper img{
+    width: 100%;
+}
+.wraper-info-curso{
+    padding: 4px 10px;
+}
+.nome-curso{
+    margin-top: 8px;
+}
+.nome-curso p{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    color: #646464;
+    padding: 0 20%;
+}
+.info-curso{
+    margin-top: 15px;
+}
+.info-curso p{
+    font-size: 16px;
+    color: #000;
+    font-weight: lighter;
+}
+.btn-curso{
+    width: 100%;
+    text-align: center;
+}
+.btn-curso a{
+    width: 100%;
+    background-color: #665fb3;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+}
+section.chamada2{
+    width: 100%;
+    height: 200px;
+    background-color: #5e3ea1;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.organiza2{
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+}
+.organiza2 h2{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+}
+.organiza2 input[type = email]{
+    width: 550px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+    padding-left: 30px;
+}
+.organiza2 input[type = button]{
+    cursor: pointer;
+    width: 550px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    background-color:#e7426b ;
+}
+section.video{
+	padding: 50px 0;
+}
+.center3{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.box-video{
+	width: 33.3%;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+section.video iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+footer.footer1{
+    padding: 30px 0;
+    background-color: #5e3ea1;
+    color: #fff;
+    width: 100%;
+    height: 400px;
+}
+.intern{
+    width: 100%;
+    margin-top: 35px;
+
+}
+.sobre{
+    width: 50%;
+    float: left;
+    padding-right: 45px;
+    padding-left: 70px;
+}
+.sobre h2{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.contato{
+    width: 50%;
+    float: right;
+    padding-left: 30px;
+    text-align: center;
+}
+.contato h2{
+    margin-bottom: 12px;
+}
+.contato p{
+    line-height: 30px;
+}
+footer.footer2{
+    padding: 20px 0;
+    background-color:#3e2a68 ;
+    text-align: center;
+}
+.footer_lokura{
+    width: 100%;
+}
+
+@media screen and (max-width:1230px){
+    nav .not ul{
+        display: none;
+    }
+    .section_mobile{
+        display: inline-block;
+    }
+    nav.mobile{
+        display: inline-block;
+    }
+    .btn{
+        display: inline-block;
+        float: none;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        -ms-transform: translate(-50%);
+    }
+    .btn a{
+        margin: 20px 0 0 8px ;
+        float: left;
+        text-decoration: none;
+        padding: 5px 19px;
+    }
+    .box_texto{
+        margin-top: 180px;
+    }
+}
+@media screen and (max-width: 1033px){
+    footer.footer1{
+        padding: 30px 0;
+        background-color: #5e3ea1;
+        height: auto;
+        width: 100%;
+        color: #fff;
+    }
+    .sobre{
+        width: 100%;
+        float: none;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-bottom: 60px;
+    }
+    .contato{
+        width: 100%;
+        float: none;;
+    }
+    .contato p{
+        line-height: 45px;
+    }
+    section.video{
+        width: 100%;
+        height: auto;
+    }
+    .box-video{
+        width: 50%;
+        float: left;
+    }
+    
+}
+@media screen and (max-width:760px){
+    section.diferenciais{
+        width: 100%;
+        height: auto;
+    }
+    .center{
+        max-width: 650px;
+        width: 100%;
+        padding: 0 2%;
+    }
+    .box_dif{
+        margin-left: 20px;
+        width: 45%;
+        padding: 50px 3%;
+    }
+    section.chamada1{
+        height: auto;
+    }
+    section.vitrine-cursos{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    section.chamada2{
+        height: auto;
+    }
+    .box-curso-single{
+        display: inline-block;
+        width: 45%;
+        padding: 50px 0;
+        margin: 0 auto;
+    }
+    .box-video{
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (max-width:580px){
+    .not{
+        width: 100%;
+        float:none;
+    }
+    .btn{
+      text-align: center;
+      margin: 30px auto;
+    }
+    .btn a{
+        margin: 0 auto;
+    }
+    .center{
+        max-width: 650px;
+        width: 100%;
+        padding: 0 2%;
+    }
+    .box_dif{
+        float: none;
+        margin:0 auto;
+        width: 55%;
+        padding: 50px 3%;
+    }
+    .box-curso-single{
+        float: none;
+        width: 85%;
+        padding: 50px 0;
+        margin: 0 auto;
+    }
+    .organiza2 input[type = email]{
+        width: 100%;
+    }
+    .organiza2 input[type = button]{
+        width: 100%;
+    }
+}
+/*tive que fazer essa manobra de colocar a segunda @media de 1033px aqui abaixo da ultima @media de 580px, porque o vscode estava conflitando as ultimas linhas do codigo*/
